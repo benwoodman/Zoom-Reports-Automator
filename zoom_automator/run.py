@@ -1,9 +1,10 @@
-import reports
+#!/usr/bin/env python
+
 import sys
 
 
 def start():
-    if (len(sys.argv) > 0):
+    if (len(sys.argv) > 1):
         if (sys.argv[1] == "pull-reports"):
             reports.pull_reports()
         elif (sys.argv[1] == "pull-recordings"):
@@ -17,5 +18,3 @@ def start():
 
 def pull_recordings():
     print("Pull recordings coming soon.")
-
-start()
